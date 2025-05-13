@@ -8,8 +8,44 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <./spbw.h>
+#include <./mothbw.h>
 
 / {
+
+    chosen {
+        zmk,display = &nice_view; 
+    };
+
+    // adding the moth
+    widget_image_moth: widget_image_moth {
+        compatible = "zmk,widget_image";
+        image = <&mothbw>;
+    };
+
+    widget_image_sp: widget_image_sp {
+        compatible = "zmk,widget-image";
+        image = <&spbw>;
+    };
+
+    // Display Node Configurations 
+    nice_view: nice_view {
+        #if IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+        widgets = <
+            &widget_battery_status
+            &widget_output_status
+            &widget_image_moth
+            &widget_layer_status
+        >;
+        #elif IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_PERIPHERAL)
+        widgets = <
+            &widget_battery_status
+            &widget_output_status
+            &widget_image_sp
+        >;
+        #endif
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
