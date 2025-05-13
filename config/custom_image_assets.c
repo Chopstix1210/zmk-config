@@ -1,2 +1,2 @@
-#include "mothbw"
+#include "mothbw.h"
 #include "spbw.h"
