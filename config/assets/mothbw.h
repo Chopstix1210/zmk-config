@@ -1,11 +1,3 @@
-#ifndef LV_ATTRIBUTE_MEM_ALIGN
-#define LV_ATTRIBUTE_MEM_ALIGN
-#endif
-
-#ifndef LV_ATTRIBUTE_IMG_MOTHBW
-#define LV_ATTRIBUTE_IMG_MOTHBW
-#endif
-
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_MOTHBW uint8_t mothbw_map[] = {
   0xf5, 0xf5, 0xf5, 0xff, 	/*Color of index 0*/
   0x04, 0x04, 0x04, 0xff, 	/*Color of index 1*/

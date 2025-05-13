@@ -1,11 +1,3 @@
-#ifndef LV_ATTRIBUTE_MEM_ALIGN
-#define LV_ATTRIBUTE_MEM_ALIGN
-#endif
-
-#ifndef LV_ATTRIBUTE_IMG_SPBW
-#define LV_ATTRIBUTE_IMG_SPBW
-#endif
-
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_SPBW uint8_t spbw_map[] = {
   0xf7, 0xf7, 0xf7, 0xff, 	/*Color of index 0*/
   0x01, 0x01, 0x01, 0xff, 	/*Color of index 1*/
