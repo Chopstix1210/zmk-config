@@ -166,7 +166,7 @@
             };
 
     // Display Node Configurations 
-    nice_view: nice_view {
+    &nice_view {
         #if IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
         widgets = <
             &widget_battery_status
