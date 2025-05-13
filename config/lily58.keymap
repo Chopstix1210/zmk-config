@@ -181,7 +181,7 @@
             &widget_image_sp
         >;
         #endif
-    };
+    }
 
     keymap {
         compatible = "zmk,keymap";
