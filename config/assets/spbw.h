@@ -1,4 +1,4 @@
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_SPBW uint8_t spbw_map[] = {
+const uint8_t spbw_map[] = {
   0xf7, 0xf7, 0xf7, 0xff, 	/*Color of index 0*/
   0x01, 0x01, 0x01, 0xff, 	/*Color of index 1*/
 
@@ -68,7 +68,7 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_SPBW uint
   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x80, 0x00, 0x00, 0x00, 0x00, 0x01, 0xff, 0xff, 0xff, 0xff, 
 };
 
-const lv_img_dsc_t spbw = {
+const  spbw = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,

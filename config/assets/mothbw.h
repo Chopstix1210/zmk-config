@@ -1,4 +1,4 @@
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_MOTHBW uint8_t mothbw_map[] = {
+const uint8_t mothbw_map[] = {
   0xf5, 0xf5, 0xf5, 0xff, 	/*Color of index 0*/
   0x04, 0x04, 0x04, 0xff, 	/*Color of index 1*/
 
@@ -68,7 +68,7 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_MOTHBW ui
   0xff, 0xff, 0xff, 0xc0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0xff, 0xff, 0xff, 
 };
 
-const lv_img_dsc_t mothbw = {
+const mothbw = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
