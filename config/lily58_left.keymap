@@ -10,11 +10,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-
     chosen {
         zmk,display = &nice_view; 
     };
-
     // adding the moth
     widget_image_moth {
         compatible = "zmk,widget-image";
@@ -89,9 +87,7 @@
             ff ff ff c0 00 00 00 00 00 00 00 00 03 ff ff ff
             ff ff ff c0 00 00 00 00 00 00 00 00 03 ff ff ff
         ];
-
     };
-
     // Display Node Configurations 
     &nice_view {
         widgets = <
@@ -101,7 +97,6 @@
             &widget_layer_status
         >;
     }
-
     keymap {
         compatible = "zmk,keymap";
 
