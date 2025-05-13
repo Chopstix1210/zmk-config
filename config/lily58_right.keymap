@@ -15,7 +15,7 @@
         zmk,display = &nice_view; 
     };
 
-    widget_image_sp: widget_image_sp {
+    widget_image_sp {
         compatible = "zmk,widget-image";
         width = <128>;
         height = <64>;

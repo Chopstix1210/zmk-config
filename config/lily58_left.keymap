@@ -16,7 +16,7 @@
     };
 
     // adding the moth
-    widget_image_moth: widget_image_moth {
+    widget_image_moth {
         compatible = "zmk,widget-image";
         width = <128>;
         height = <64>;
