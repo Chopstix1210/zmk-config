@@ -15,11 +15,11 @@
         zmk,display = &nice_view; 
     };
 
-    widget_image_sp {
+    // adding the moth
+    widget_image_moth {
         compatible = "zmk,widget-image";
         width = <128>;
         height = <64>;
-
         data = [
             f7 f7 f7 ff 01 01 01 ff
             ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
@@ -86,6 +86,7 @@
             ff ff ff ff ff ff 80 00 00 00 00 00 ff ff ff ff
             ff ff ff ff ff ff 80 00 00 00 00 01 ff ff ff ff
         ];
+
     };
 
     // Display Node Configurations 
